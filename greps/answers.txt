@@ -5,22 +5,23 @@ grep "beed" filescan_00.1>/Users/surabhi/Projects/Grep.CatchEmAll2/captured/beed
 grep "blas" filescan_00.1>/Users/surabhi/Projects/Grep.CatchEmAll2/captured/blastoise.txt
 grep "butt" filescan_00.1>/Users/surabhi/Projects/Grep.CatchEmAll2/captured/butterfree.txt
 
+//forgot to install grep, now the -P works
 file 2
-grep "^char"| grep "izard$" filescan_00.2>/Users/surabhi/Projects/Grep.CatchEmAll2/captured/charizard.txt
-grep "^char"| grep "meleon$" filescan_00.2>/Users/surabhi/Projects/Grep.CatchEmAll2/captured/charmeleon.txt
-grep "^char"| grep "mander$" filescan_00.2>/Users/surabhi/Projects/Grep.CatchEmAll2/captured/charmander.txt
+ggrep -P "^char"| grep "izard$" filescan_00.2>/Users/surabhi/Projects/Grep.CatchEmAll2/captured/charizard.txt
+ggrep -P "^char"| grep "meleon$" filescan_00.2>/Users/surabhi/Projects/Grep.CatchEmAll2/captured/charmeleon.txt
+ggrep -P "^char"| grep "mander$" filescan_00.2>/Users/surabhi/Projects/Grep.CatchEmAll2/captured/charmander.txt
 
 file 3
-grep "^ivy" filescan_00.3 | grep "aur$" >/Users/surabhi/Projects/Grep.CatchEmAll2/captured/ivysaur.txt
-grep "^pika" filescan_00.3 | grep "chu$" >/Users/surabhi/Projects/Grep.CatchEmAll2/captured/pikachu.txt
-grep "^meow" filescan_00.3 | grep "th$" >/Users/surabhi/Projects/Grep.CatchEmAll2/captured/meowth.txt
-grep "^jigg" filescan_00.3 | grep "lypuff$" >/Users/surabhi/Projects/Grep.CatchEmAll2/captured/jigglypuff.txt
+ggrep -P "^ivy" filescan_00.3 | grep "aur$" >/Users/surabhi/Projects/Grep.CatchEmAll2/captured/ivysaur.txt
+ggrep -P "^pika" filescan_00.3 | grep "chu$" >/Users/surabhi/Projects/Grep.CatchEmAll2/captured/pikachu.txt
+ggrep -P"^meow" filescan_00.3 | grep "th$" >/Users/surabhi/Projects/Grep.CatchEmAll2/captured/meowth.txt
+ggrep -P"^jigg" filescan_00.3 | grep "lypuff$" >/Users/surabhi/Projects/Grep.CatchEmAll2/captured/jigglypuff.txt
 
 file 4
-grep "^psyd" filescan_00.4 | grep "uck$" >/Users/surabhi/Projects/Grep.CatchEmAll2/captured/psyduck.txt
-grep "^wart" filescan_00.4 | grep "ortle$" >/Users/surabhi/Projects/Grep.CatchEmAll2/captured/wartortle.txt
-grep "^squi" filescan_00.4 | grep "rtle$" >/Users/surabhi/Projects/Grep.CatchEmAll2/captured/squirtle.txt
-grep "^venu" filescan_00.4 | grep "saur$" >/Users/surabhi/Projects/Grep.CatchEmAll2/captured/venusaur.txt
+ggrep -P "^psyd" filescan_00.4 | grep "uck$" >/Users/surabhi/Projects/Grep.CatchEmAll2/captured/psyduck.txt
+ggrep -P "^wart" filescan_00.4 | grep "ortle$" >/Users/surabhi/Projects/Grep.CatchEmAll2/captured/wartortle.txt
+ggrep -P "^squi" filescan_00.4 | grep "rtle$" >/Users/surabhi/Projects/Grep.CatchEmAll2/captured/squirtle.txt
+ggrep -P "^venu" filescan_00.4 | grep "saur$" >/Users/surabhi/Projects/Grep.CatchEmAll2/captured/venusaur.txt
 ### b)
 
 
