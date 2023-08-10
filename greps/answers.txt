@@ -4,7 +4,7 @@ file 1
 grep "beed" filescan_00.1>/Users/surabhi/Projects/Grep.CatchEmAll2/captured/beedrill.txt
 grep "blas" filescan_00.1>/Users/surabhi/Projects/Grep.CatchEmAll2/captured/blastoise.txt
 grep "butt" filescan_00.1>/Users/surabhi/Projects/Grep.CatchEmAll2/captured/butterfree.txt
-
+ggrep -P "^bulb" filescan_00.4>/Users/surabhi/Projects/Grep.CatchEmAll2/captured/bulbasaur.txt
 //forgot to install grep, now the -P works
 file 2
 ggrep -P "^char"| grep "izard$" filescan_00.2>/Users/surabhi/Projects/Grep.CatchEmAll2/captured/charizard.txt
@@ -22,11 +22,48 @@ ggrep -P "^psyd" filescan_00.4 | grep "uck$" >/Users/surabhi/Projects/Grep.Catch
 ggrep -P "^wart" filescan_00.4 | grep "ortle$" >/Users/surabhi/Projects/Grep.CatchEmAll2/captured/wartortle.txt
 ggrep -P "^squi" filescan_00.4 | grep "rtle$" >/Users/surabhi/Projects/Grep.CatchEmAll2/captured/squirtle.txt
 ggrep -P "^venu" filescan_00.4 | grep "saur$" >/Users/surabhi/Projects/Grep.CatchEmAll2/captured/venusaur.txt
-### b)
+
+
+find . -type f
+//showed all the files  in the captured folder
+
+
+2a) I created 15 separate files for all the Pokémon
+
+
+2b) charizard, beedrill, pikachu
+
+ wc -l beedrill.txt : 40
+ wc -l blastoise.txt :38
+ wc -l butterfree.txt :38
+ wc -l charizard.txt :40
+ wc -l charmander.txt : 36
+ wc -l charmeleon.txt : 37
+ wc -l ivysaur.txt : 33
+ wc -l jigglypuff.txt :34
+
+//this counted all the lines at once
+ find . -type f | xargs wc -l
+
+   37 ./wartortle.txt
+       38 ./blastoise.txt
+        0 ./.DS_Store
+       40 ./charizard.txt
+       40 ./beedrill.txt
+       38 ./butterfree.txt
+        1 ./instruction.txt
+       32 ./venusaur.txt
+       33 ./ivysaur.txt
+       40 ./pikachu.txt
+       34 ./squirtle.txt
+       33 ./meowth.txt
+       36 ./charmander.txt
+       37 ./charmeleon.txt
+       37 ./psyduck.txt
+       34 ./jigglypuff.txt
 
 
 
-### c)
 
 
 
@@ -40,15 +77,7 @@ ggrep -P "^venu" filescan_00.4 | grep "saur$" >/Users/surabhi/Projects/Grep.Catc
 
 
 
-# Part 2
-### a)
 
-
-
-
-
-
-### b)
 
 
 
